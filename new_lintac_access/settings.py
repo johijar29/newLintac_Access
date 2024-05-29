@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'gestion_equipos',
+    'aplicaciones.gestion_equipos',
 ]
 
 MIDDLEWARE = [
@@ -76,8 +76,12 @@ WSGI_APPLICATION = 'new_lintac_access.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'lintac_access',
+        'USER': 'root',
+        'PASSWORD': 'vgn-cs140f',
+        'HOST': '127.0.0.1',  # O tu dirección del servidor si es remoto
+        'PORT': '3306',  # El puerto por defecto para MySQL
     }
 }
 

@@ -1,6 +1,6 @@
 from django.shortcuts import get_object_or_404, render, redirect
 from django.db import transaction
-from .models import Alumno, Equipamiento, Funcionario
+from .models import Alumno, Equipamiento, EstadoEquipamiento, Funcionario
 from .forms import EquipamientoForm, EnviarServicioTecnicoForm, AsignarEquipamientoForm, CambiarEstadoEquipamientoForm
 from django.contrib import messages
 from django.core.paginator import Paginator, PageNotAnInteger, EmptyPage
